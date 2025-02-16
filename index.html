@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern blog website featuring the latest articles on technology and web development">
+    <title>Modern Blog</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/blog-logo.svg" alt="Blog Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex search-form">
+                    <input class="form-control me-2" type="search" placeholder="Search posts..." aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modern Dark Hero Section -->
+    <header class="hero-section dark-mode">
+        <!-- Animated Particles Background -->
+        <div id="particles-js"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content neomorphic-card">
+                        <!-- Animated Status Badge -->
+                        <div class="status-badge">
+                            <span class="pulse"></span>
+                            <span class="status-text">Live Courses Available</span>
+                        </div>
+
+                        <!-- Modern Title -->
+                        <h1 class="hero-title">
+                            Discover the World of
+                            <div class="dynamic-text">
+                                <span class="text-primary">Programming</span>
+                                <span class="text-success">Design</span>
+                                <span class="text-warning">Technology</span>
+                            </div>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Join our community of developers and designers. Learn from industry experts and build real-world projects.
+                        </p>
+
+                        <!-- Modern CTA Section -->
+                        <div class="cta-group">
+                            <a href="#courses" class="btn btn-glow">
+                                <span class="btn-text">Start Learning</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                            <div class="stats-group">
+                                <div class="stat-item">
+                                    <span class="stat-value counter">15K+</span>
+                                    <span class="stat-label">Students</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value counter">4.9</span>
+                                    <span class="stat-label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="tech-stack">
+                            <div class="tech-label">Popular Technologies</div>
+                            <div class="tech-grid">
+                                <div class="tech-item" data-tooltip="React">
+                                    <img src="path/to/react.svg" alt="React">
+                                </div>
+                                <!-- More tech items -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <!-- 3D Visual Element -->
+                        <div class="visual-container neomorphic-card">
+                            <div class="code-editor">
+                                <div class="editor-header">
+                                    <div class="controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <div class="title">main.js</div>
+                                </div>
+                                <div class="editor-content">
+                                    <pre><code class="language-javascript">
+const App = () => {
+    return (
+        <div className="app">
+            <h1>Hello World</h1>
+        </div>
+    );
+}
+                                    </code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Floating Elements -->
+                            <div class="floating-elements">
+                                <div class="element" style="--delay: 0s">
+                                    <div class="element-icon">⚛️</div>
+                                    <div class="element-text">React</div>
+                                </div>
+                                <div class="element" style="--delay: 0.2s">
+                                    <div class="element-icon">🎨</div>
+                                    <div class="element-text">Design</div>
+                                </div>
+                                <!-- More elements -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trending Posts Section -->
+    <section class="trending-section py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Qoraalada Ugu Caansan</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="trending-post card hover-shadow">
+                        <span class="trending-badge">1</span>
+                        <div class="card-body">
+                            <h5 class="card-title">Sida loo isticmaalo HTML5</h5>
+                            <p class="card-text">Baro aasaaska HTML5...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more trending posts here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="categories-section py-5">
+        <div class="container">
+            <div class="categories-filter mb-4">
+                <button class="btn btn-primary active" data-category="all">Dhamaan</button>
+                <button class="btn btn-outline-primary" data-category="technology">Teknoolajiyada</button>
+                <button class="btn btn-outline-primary" data-category="development">Horumarinta</button>
+                <button class="btn btn-outline-primary" data-category="design">Naqshadeynta</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="posts-grid py-5">
+        <div class="container">
+            <div class="row" id="postsContainer">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h2>Iska diiwaan geli Wargeyskeena</h2>
+                    <form class="newsletter-form mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Gali emailkaaga" required>
+                            <button class="btn btn-primary" type="submit">Iska diiwaan geli</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories - New Section -->
+    <section class="featured-categories py-5" id="featured">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-6 fw-bold">Qaybaha Ugu Muhiimsan</h2>
+                <p class="text-muted">Dooro qaybta aad rabto inaad wax ka barato</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="category-box bg-primary bg-opacity-10 rounded-4 p-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-code-slash display-5 text-primary"></i>
+                        </div>
+                        <h4 class="mb-2">Frontend</h4>
+                        <p class="mb-3 text-muted">HTML, CSS, JavaScript</p>
+                        <span class="badge bg-primary">25 Qoraal</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box bg-success bg-opacity-10 rounded-4 p-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-database display-5 text-success"></i>
+                        </div>
+                        <h4 class="mb-2">Backend</h4>
+                        <p class="mb-3 text-muted">PHP, Node.js, Python</p>
+                        <span class="badge bg-success">18 Qoraal</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box bg-warning bg-opacity-10 rounded-4 p-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-phone display-5 text-warning"></i>
+                        </div>
+                        <h4 class="mb-2">Mobile</h4>
+                        <p class="mb-3 text-muted">Android, iOS, Flutter</p>
+                        <span class="badge bg-warning">15 Qoraal</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box bg-info bg-opacity-10 rounded-4 p-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-brush display-5 text-info"></i>
+                        </div>
+                        <h4 class="mb-2">UI/UX</h4>
+                        <p class="mb-3 text-muted">Design, Figma, Adobe XD</p>
+                        <span class="badge bg-info">12 Qoraal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Modern Blog is your source for the latest insights in technology and web development.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">Categories</a></li>
+                        <li><a href="#" class="text-light">About</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Categories Modal -->
+    <div class="modal fade" id="categoriesModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Qaybaha Blog-ga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="category-card text-center p-4 rounded bg-primary text-white">
+                                <i class="bi bi-laptop display-4 mb-3"></i>
+                                <h4>Teknoolajiyada</h4>
+                                <p>Warbixinada ugu dambeeyay ee teknoolajiyada</p>
+                                <span class="badge bg-light text-primary">25 Qoraal</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category-card text-center p-4 rounded bg-success text-white">
+                                <i class="bi bi-code-square display-4 mb-3"></i>
+                                <h4>Horumarinta</h4>
+                                <p>Barashada coding-ka iyo software-ka</p>
+                                <span class="badge bg-light text-success">18 Qoraal</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category-card text-center p-4 rounded bg-warning text-dark">
+                                <i class="bi bi-brush display-4 mb-3"></i>
+                                <h4>Naqshadeynta</h4>
+                                <p>UI/UX design iyo graphics</p>
+                                <span class="badge bg-light text-warning">12 Qoraal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ku saabsan Blog-geena</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img src="assets/images/blog-logo.svg" alt="Blog Logo" class="mb-3" style="width: 100px;">
+                        <h4>Modern Blog</h4>
+                        <p class="text-muted">Halka laga barto Teknoolajiyada</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="about-stat text-center p-3 border rounded">
+                                <i class="bi bi-file-text display-6 text-primary mb-2"></i>
+                                <h5>100+</h5>
+                                <p class="mb-0">Qoraal</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-stat text-center p-3 border rounded">
+                                <i class="bi bi-people display-6 text-primary mb-2"></i>
+                                <h5>5,000+</h5>
+                                <p class="mb-0">Akhristayaal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h6 class="mb-3">Nala soo xiriir:</h6>
+                    <div class="d-flex gap-2 justify-content-center">
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technology Content Modal -->
+    <div class="modal fade" id="techModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content dark-theme">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Teknoolajiyada</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- Web Technologies -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-globe2"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <ul class="tech-list">
+                                    <li>HTML5 & CSS3</li>
+                                    <li>JavaScript (ES6+)</li>
+                                    <li>React & Vue.js</li>
+                                    <li>Node.js & Express</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Baro Dheeraad</a>
+                            </div>
+                        </div>
+                        <!-- Mobile Development -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-phone"></i>
+                                </div>
+                                <h4>Mobile Development</h4>
+                                <ul class="tech-list">
+                                    <li>React Native</li>
+                                    <li>Flutter</li>
+                                    <li>iOS Development</li>
+                                    <li>Android Development</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Baro Dheeraad</a>
+                            </div>
+                        </div>
+                        <!-- Cloud & DevOps -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-cloud"></i>
+                                </div>
+                                <h4>Cloud & DevOps</h4>
+                                <ul class="tech-list">
+                                    <li>AWS & Azure</li>
+                                    <li>Docker & Kubernetes</li>
+                                    <li>CI/CD</li>
+                                    <li>Git & GitHub</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Baro Dheeraad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Development Content Modal -->
+    <div class="modal fade" id="devModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content dark-theme">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Horumarinta Software-ka</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- Frontend Development -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-window"></i>
+                                </div>
+                                <h4>Frontend Development</h4>
+                                <ul class="tech-list">
+                                    <li>React.js & Next.js</li>
+                                    <li>Vue.js & Nuxt.js</li>
+                                    <li>TypeScript</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Koorso Bilow</a>
+                            </div>
+                        </div>
+                        <!-- Backend Development -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-server"></i>
+                                </div>
+                                <h4>Backend Development</h4>
+                                <ul class="tech-list">
+                                    <li>Node.js & Express</li>
+                                    <li>Python & Django</li>
+                                    <li>Database Design</li>
+                                    <li>API Development</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Koorso Bilow</a>
+                            </div>
+                        </div>
+                        <!-- Mobile Development -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-phone"></i>
+                                </div>
+                                <h4>Mobile Development</h4>
+                                <ul class="tech-list">
+                                    <li>React Native</li>
+                                    <li>Flutter & Dart</li>
+                                    <li>iOS Development</li>
+                                    <li>Android Development</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Koorso Bilow</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Content Modal -->
+    <div class="modal fade" id="designModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content dark-theme">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Naqshadeynta</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- UI Design -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-palette"></i>
+                                </div>
+                                <h4>UI Design</h4>
+                                <ul class="tech-list">
+                                    <li>Figma & Adobe XD</li>
+                                    <li>Color Theory</li>
+                                    <li>Typography</li>
+                                    <li>Design Systems</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Koorso Bilow</a>
+                            </div>
+                        </div>
+                        <!-- UX Design -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-person-workspace"></i>
+                                </div>
+                                <h4>UX Design</h4>
+                                <ul class="tech-list">
+                                    <li>User Research</li>
+                                    <li>Wireframing</li>
+                                    <li>Prototyping</li>
+                                    <li>Usability Testing</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Koorso Bilow</a>
+                            </div>
+                        </div>
+                        <!-- Graphic Design -->
+                        <div class="col-md-4">
+                            <div class="tech-card">
+                                <div class="tech-icon">
+                                    <i class="bi bi-vector-pen"></i>
+                                </div>
+                                <h4>Graphic Design</h4>
+                                <ul class="tech-list">
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Logo Design</li>
+                                    <li>Brand Identity</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light mt-3">Koorso Bilow</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script>
+    // Update trending posts data with working images
+    const trendingPosts = [
+        {
+            id: 1,
+            title: 'Sida loo isticmaalo HTML5',
+            excerpt: 'Baro aasaaska HTML5 iyo sida loo sameeyo website-yo casri ah...',
+            views: 1500,
+            image: 'https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png'  // HTML5 image
+        },
+        {
+            id: 2,
+            title: 'Barashada CSS Grid',
+            excerpt: 'Baro sida loo isticmaalo CSS Grid si aad u sameyso layout-yo casri ah...',
+            views: 1200,
+            image: 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png'  // CSS3 image
+        },
+        {
+            id: 3,
+            title: 'JavaScript-ka Asaasiga ah',
+            excerpt: 'Baro aasaaska JavaScript iyo sida loo sameeyo website-yo dynamic ah...',
+            views: 980,
+            image: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png'  // JavaScript image
+        }
+    ];
+    </script>
+</body>
+</html> 

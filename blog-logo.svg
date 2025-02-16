@@ -1,0 +1,50 @@
+<svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Gradient Background -->
+    <defs>
+        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2563EB"/>
+            <stop offset="100%" style="stop-color:#3B82F6"/>
+        </linearGradient>
+        
+        <!-- Shine Effect -->
+        <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgba(255,255,255,0)"/>
+            <stop offset="50%" style="stop-color:rgba(255,255,255,0.8)"/>
+            <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Modern Square Background -->
+    <rect width="45" height="45" rx="10" fill="url(#logoGradient)"/>
+    
+    <!-- Modern Stylized A -->
+    <path d="M22.5 8L33 37H12L22.5 8Z" fill="white"/>
+    <path d="M17 25H28" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Tech Circuit Lines -->
+    <path d="M5 15h5M5 22h3M5 29h5" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M35 15h5M37 22h3M35 29h5" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Decorative Dots -->
+    <circle cx="38" cy="7" r="2" fill="white" opacity="0.8"/>
+    <circle cx="7" cy="38" r="2" fill="white" opacity="0.8"/>
+    
+    <!-- AHMED Text with Modern Typography -->
+    <text x="55" y="30" font-family="Arial" font-size="24" font-weight="900" letter-spacing="1">
+        <tspan fill="#2563EB">A</tspan>
+        <tspan fill="#1F2937">HMED</tspan>
+    </text>
+    
+    <!-- Modern Tagline -->
+    <text x="57" y="40" font-family="Arial" font-size="10" fill="#6B7280" letter-spacing="2">
+        TECH BLOG
+    </text>
+    
+    <!-- Shine Animation -->
+    <rect width="45" height="45" rx="10" fill="url(#shine)" opacity="0.1">
+        <animate attributeName="x" from="-45" to="45" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Additional Tech Elements -->
+    <path d="M3 3l4 4M38 38l4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+</svg> 
